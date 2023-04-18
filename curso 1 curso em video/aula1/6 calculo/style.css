@@ -1,0 +1,14 @@
+body {
+    font-size: 2em;
+  }
+  input {
+    width: 100px;
+  }
+  nav {
+    background-color: aqua;
+    width: 500px;
+    text-align: center;
+    margin: auto;
+    border-radius: 15px;
+    
+  }

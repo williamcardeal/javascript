@@ -1,0 +1,24 @@
+html{
+    background-color: aqua;
+}
+body{
+   padding: 210px;
+    font-size: 2em;
+    color: white;
+}
+ nav{
+background-color: rgb(255, 94, 0);
+width: 600px;
+text-align: center;
+margin: auto;
+border-radius: 15px;
+ }
+ input#vel{
+    font-size: 20px;
+
+
+ }
+ input{
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.651);
+    border-radius: 5px;
+ }
