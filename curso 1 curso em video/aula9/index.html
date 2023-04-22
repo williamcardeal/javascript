@@ -4,34 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aterando a img com o Horario</title>
+    <title>Qual a sua idade?</title>
     <link
       rel="shortcut icon"
       href="img/favicon-16x16.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" /> 
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
     ></script>
   </head>
-  <body onload="carregar()">
+  <body>
     <header>
-      <h1>Horario com Temas</h1>
+      <h1>Verificador de idade</h1>
     </header>
-
     <section>
-      <div id="msg">
-        <p>carregando hr...</p>
+      <div>
+              <p>
+                <label for="txtano">Ano de mascimento:</label>
+                <input type="number" name="txtano" id="txtano">
+              </p>
+              <p>
+                Sexo:
+                <input type="radio" name="" id="M">
+                <label for="M">Masculino</label>
+                <input type="radio" name="" id="F">
+                <label for="F">Feminino</label>
+              </p>
+              <p>
+                <input type="button" value="Verificar" onclick="verif()">
+              </p>
       </div>
+      <div id="res">
+          <p>
+            Preencha os dados acima para ver o resultado!
+          </p>
+      </div>
+    
     </section>
-    <figure>
-      <div id="foto">
-        <img id="imagem" src="img/manha.png" alt="" />
-      </div>
-    </figure>
-
     <footer>
       <p>
         <ion-icon name="logo-instagram"></ion-icon>
