@@ -17,19 +17,23 @@ function verif(){
 
        let genero = ""
 
-       let img = document.createElement("img")
+       var img = document.createElement("img")
        img.setAttribute("id, foto")
        
        if (sex [0].checked){
         genero = "Masculino"
         if(idade >= 0 && idade < 10){
             //criança
+        document.querySelector.innerHTML = img.src = "criançaH.png"
         } else if (idade >= 10 && idade < 21){
             //jovem
+        document.querySelector.innerHTML = img.src = "jovemH.png"
         } else if (idade < 21){
             //adulto
+       document.querySelector.innerHTML = img.src = "homem.png"    
         }else if(idade < 50){
             //idoso
+        document.querySelector.innerHTML = img.src = "velhoH.png"
         }
 
     }else if (sex [1].checked){
@@ -37,15 +41,20 @@ function verif(){
        }
        if(idade >= 0 && idade < 10){
         //criança
+        document.querySelector.innerHTML = img.src = "criançaM.png"
     } else if (idade >= 10 && idade < 21){
         //jovem
+        document.querySelector.innerHTML = img.src = "jovemM.png"
     } else if (idade < 21){
         //adulto
+    document.querySelector.innerHTML = img.src = "mulher.png"
     }else if(idade < 50){
         //idoso(a)
+    document.querySelector.innerHTML = img.src = "velhaM.png"
     }
        res.style.textAlign = "center"
-       res.innerHTML = `${genero} ${idade}`
+       res.innerHTML = `Detectamos ${genero} com a idade: ${idade} anos`
+       res.appendChild(img)
     }
 
 }
