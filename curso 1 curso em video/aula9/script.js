@@ -59,4 +59,4 @@ function verif() {
 }
 
 
-// document.querySelector.innerHTML = img.src = "img/tarde.png";
+// document.querySelector.innerHTML = img.src = "img/tarde.png";;
