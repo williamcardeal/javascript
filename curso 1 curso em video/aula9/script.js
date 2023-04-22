@@ -24,10 +24,10 @@ function verif(){
         genero = "Masculino"
         if(idade >= 0 && idade < 10){
             //criança
-       // document.querySelector.innerHTML = img.src = "criançaH.png"
+       document.querySelector.innerHTML = img.src = "criançaH.png"
         } else if (idade >= 10 && idade < 21){
             //jovem
-       // document.querySelector.innerHTML = img.src = "jovemH.png"
+       document.querySelector.innerHTML = img.src = "jovemH.png"
        img.setAttribute("src","../jovemH.png")
         } else if (idade < 21){
             //adulto
@@ -55,8 +55,8 @@ function verif(){
     }
        res.style.textAlign = "center"
        res.innerHTML = `Detectamos ${genero} com a idade: ${idade} anos`
-       res.appendChild(img)
-    }
+       res.appendChild = img
+    } 
 
 }
 
