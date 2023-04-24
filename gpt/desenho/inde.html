@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+</head>
+<body>
+  <script>
+    function setup() {
+      createCanvas(400, 400);
+    }
+
+    function draw() {
+      background(220);
+      stroke(139, 69, 19);
+      branch(200, 380, 100, -PI/2);
+    }
+
+    function branch(x, y, len, angle) {
+      var endX = x + len * cos(angle);
+      var endY = y + len * sin(angle);
+
+      strokeWeight(8);
+      line(x, y, endX, endY);
+
+      if (len > 4) {
+        branch(endX, endY, len * 0.7, angle - PI/4);
+        branch(endX, endY, len * 0.7, angle + PI/4);
+      }
+    }
+  </script>
+</body>
+</html>
