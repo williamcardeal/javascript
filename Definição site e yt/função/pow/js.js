@@ -24,3 +24,10 @@ function pow(x, n) {
   }
   
  console.log( pow(2, 3) ); // 8
+
+
+ function sum(a, b, n) {
+    return a + b + n;
+  }
+  
+  console.log( sum(1, 2, 3, 4, 5) ); //etc
